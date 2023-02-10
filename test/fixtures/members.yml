@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  netid: MyString
+  firstname: MyString
+  lastname: MyString
+  uin: MyString
+  email: MyString
+  phone: MyString
+  shirt: MyString
+  strikes: 1
+  points: 1
+
+two:
+  netid: MyString
+  firstname: MyString
+  lastname: MyString
+  uin: MyString
+  email: MyString
+  phone: MyString
+  shirt: MyString
+  strikes: 1
+  points: 1
