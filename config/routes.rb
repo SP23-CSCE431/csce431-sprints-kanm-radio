@@ -6,4 +6,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root "members#index"
+
+  get "/members", to: "members#index"
+  get "/members/new", to: "members#new"
+  post "/members", to: "members#create"
+  get "/members/:id", to: "members#show"
+  get "/members/:id/edit", to: "members#edit"
+  patch "/members/:id", to: "members#update"
+  delete "/members/:id", to: "members#destroy"
+
+
 end
