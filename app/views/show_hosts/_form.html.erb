@@ -1,0 +1,27 @@
+<%= form_with(model: show_host) do |form| %>
+  <% if show_host.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(show_host.errors.count, "error") %> prohibited this show_host from being saved:</h2>
+
+      <ul>
+        <% show_host.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :show_id, style: "display: block" %>
+    <%= form.select :show_id, Show.order(:showname).map { |show| [show.showname, show.id] }, include_blank: true, id: "id_of_the_show_id_select_box" %>
+  </div>
+
+  <div>
+    <%= form.label :member_id, style: "display: block" %>
+    <%= form.select :member_id, Member.order(:netid).map { |member| [member.netid, member.id] }, include_blank: true, id: "id_of_the_member_id_select_box" %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

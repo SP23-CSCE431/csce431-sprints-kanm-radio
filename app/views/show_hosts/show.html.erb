@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @show_host %>
+
+<div>
+  <%= link_to "Edit this show host", edit_show_host_path(@show_host) %> |
+  <%= link_to "Back to show hosts", show_hosts_path %>
+
+  <%= button_to "Destroy this show host", @show_host, method: :delete %>
+</div>

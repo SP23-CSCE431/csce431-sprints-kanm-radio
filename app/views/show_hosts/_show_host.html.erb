@@ -1,0 +1,12 @@
+<div id="<%= dom_id show_host %>">
+  <p>
+    <strong>Show:</strong>
+    <td><%= Show.where(id: show_host.show_id).last.showname %></td>
+  </p>
+
+  <p>
+    <strong>Membe:</strong>
+    <td><%= Member.where(id: show_host.member_id).last.firstname %></td>
+  </p>
+
+</div>

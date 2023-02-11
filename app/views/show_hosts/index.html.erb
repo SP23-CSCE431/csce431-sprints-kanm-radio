@@ -1,0 +1,35 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Show hosts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>DJ</th>
+      <th>Show</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @show_hosts.each do |show_host| %>
+      <tr>
+        <td><%= Member.where(id: show_host.member_id).last.firstname %></td>
+        <td><%= Show.where(id: show_host.show_id).last.showname %></td>
+        <td><%= link_to 'Show', show_host %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<%= link_to "New show host", new_show_host_path %>
+<br>
+<%= link_to "Member index", members_path %>
+<br>
+<%= link_to "Show index", shows_path %>
+<br>
+<%= link_to "Calendar index", calendars_path %>
+
