@@ -257,7 +257,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bootstrap (~> 5.2, >= 5.2.3)
+  bootstrap
   capybara
   debug
   importmap-rails
