@@ -2,14 +2,27 @@
 
 <h1>Shows</h1>
 
-<div id="shows">
-  <% @shows.each do |show| %>
-    <%= render show %>
-    <p>
-      <%= link_to "Show this show", show %>
-    </p>
-  <% end %>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Show name</th>
+      <th>Show description</th>
+      <th>Edit this show</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shows.each do |show| %>
+      <tr>
+        <td><%= show.showname %></td>
+        <td><%= show.showdescription %></td>
+        <td><%= link_to "Show this show", show %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
 
 <%= link_to "New show", new_show_path %>
 <br>
