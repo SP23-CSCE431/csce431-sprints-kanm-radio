@@ -57,6 +57,13 @@
   </div>
 
   <div>
+    <%= form.label :dj, style: "display: block" %>
+    <%= form.select(:dj, options_for_select([['True', true], ['False', false]], {:selected => @member.dj}),:prompt => "Select") %>
+
+  </div>
+
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
