@@ -1,8 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Shows</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Show name</th>
@@ -28,8 +27,4 @@
 
 
 
-<%= link_to "New show", new_show_path %>
-<br>
-<%= link_to "Member index", members_path %>
-<br>
-<%= link_to "Show host index", show_hosts_path %>
+<%= link_to "<button>New show</button>".html_safe, new_show_path %>

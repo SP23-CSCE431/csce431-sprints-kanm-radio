@@ -1,14 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<nav class="navbar navbar-dark bg-dark
-">
-  <a class="navbar-brand" href="#">
-    <img src="https://kanm.tamu.edu/_assets/img/logo/trans_med.png" width="50" height="50" class="d-inline-block align-top" alt="">
-    Members
-  </a>
-</nav>
-
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>NetID</th>
@@ -46,8 +38,5 @@
 
 
 
-<%= link_to "New member", new_member_path %>
-<br>
-<%= link_to "Show index", shows_path %>
-<br>
-<%= link_to "Show host index", show_hosts_path %>
+<%= link_to "<button>New member</button>".html_safe, new_member_path %>
+
