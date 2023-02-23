@@ -68,8 +68,8 @@ RSpec.describe 'Adding a new member', type: :feature do
     click_on 'Create Member'
     visit members_path
     click_on 'Show this member'
-    click_on 'Destroy this member'
-    expect(page).to have_content('Member was successfully destroyed')
+    click_on 'Delete this member'
+    expect(page).to have_content('Member has been successfully deleted')
   end
 end
 
@@ -127,8 +127,8 @@ RSpec.describe 'Adding a new show', type: :feature do
     click_on 'Create Show'
     visit shows_path
     click_on 'Show this show'
-    click_on 'Destroy this show'
-    expect(page).to have_content('Show was successfully destroyed')
+    click_on 'Delete this show'
+    expect(page).to have_content('Show has been successfully deleted.')
   end
 end
 
@@ -249,82 +249,7 @@ RSpec.describe 'Adding a new show host', type: :feature do
     click_on "Create Show host"
     visit show_hosts_path
     click_on "Show"
-    click_on "Destroy this show host"
-    expect(page).to have_content('Show host was successfully destroyed.')
+    click_on "Delete this show host"
+    expect(page).to have_content('Show host has been successfully deleted.')
   end
-end
-  RSpec.describe 'Adding a new show calendar', type: :feature do
-    scenario 'valid inputs' do
-      visit new_show_path
-      fill_in "show[showname]", with: '123'
-      fill_in "show[showdescription]", with: 'John'
-      click_on 'Create Show'
-      visit shows_path
-      visit new_calendar_path
-      select '123', from: "calendar[show_id]"
-      fill_in "calendar[timeslot]", with: '123'
-      click_on "Create Calendar"
-      visit calendars_path
-      expect(page).to have_content('123')
-    end
-  
-    scenario 'invalid inputs' do
-      visit new_calendar_path
-      fill_in "calendar[timeslot]", with: '123'
-      click_on "Create Calendar"
-      expect(page).to have_content('Show must exist')
-    end
-  
-    scenario 'valid update' do
-      visit new_show_path
-      fill_in "show[showname]", with: '123'
-      fill_in "show[showdescription]", with: 'John'
-      click_on 'Create Show'
-      visit shows_path
-      visit new_calendar_path
-      select '123', from: "calendar[show_id]"
-      fill_in "calendar[timeslot]", with: '123'
-      click_on "Create Calendar"
-      visit calendars_path
-      click_on "Show this calendar"
-      click_on "Edit this calendar"
-      fill_in "calendar[timeslot]", with: '125'
-      click_on "Update Calendar"
-      visit calendars_path
-      expect(page).to have_content('125')
-    end
-
-    scenario 'invalid update' do
-      visit new_show_path
-      fill_in "show[showname]", with: '123'
-      fill_in "show[showdescription]", with: 'John'
-      click_on 'Create Show'
-      visit shows_path
-      visit new_calendar_path
-      select '123', from: "calendar[show_id]"
-      fill_in "calendar[timeslot]", with: '123'
-      click_on "Create Calendar"
-      visit calendars_path
-      click_on "Show this calendar"
-      click_on "Edit this calendar"
-      select '', from: "calendar[show_id]"
-      click_on "Update Calendar"
-      expect(page).to have_content('Show must exist')
-    end
-  
-    scenario 'valid destroy' do
-      visit new_show_path
-      fill_in "show[showname]", with: '123'
-      fill_in "show[showdescription]", with: 'John'
-      click_on 'Create Show'
-      visit shows_path
-      visit new_calendar_path
-      select '123', from: "calendar[show_id]"
-      fill_in "calendar[timeslot]", with: '123'
-      click_on "Create Calendar"
-      visit calendars_path
-      click_on "Show this calendar"
-      click_on "Destroy this calendar"
-      expect(page).to have_content('Calendar was successfully destroyed')
-    end
 end

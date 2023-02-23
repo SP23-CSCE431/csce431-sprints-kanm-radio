@@ -6,7 +6,9 @@
   <thead>
     <tr>
       <th>Show name</th>
+      <th>Timeslot</th>
       <th>Show description</th>
+      <th>Active</th>
       <th>Edit this show</th>
     </tr>
   </thead>
@@ -15,7 +17,9 @@
     <% @shows.each do |show| %>
       <tr>
         <td><%= show.showname %></td>
+        <td><%= show.timeslot %></td>
         <td><%= show.showdescription %></td>
+        <td><%= show.active %></td>
         <td><%= link_to "Show this show", show %></td>
       </tr>
     <% end %>
@@ -29,5 +33,3 @@
 <%= link_to "Member index", members_path %>
 <br>
 <%= link_to "Show host index", show_hosts_path %>
-<br>
-<%= link_to "Calendar index", calendars_path %>

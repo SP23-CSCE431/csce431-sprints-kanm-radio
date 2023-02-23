@@ -18,7 +18,7 @@
 
   <div>
     <%= form.label :member_id, style: "display: block" %>
-    <%= form.select :member_id, Member.order(:netid).map { |member| [member.netid, member.id] }, include_blank: true, id: "id_of_the_member_id_select_box" %>
+    <%= form.select :member_id, Member.order(:netid).map { |member| [member.netid, member.id]}, include_blank: true, id: "id_of_the_member_id_select_box" %>
   </div>
 
   <div>
