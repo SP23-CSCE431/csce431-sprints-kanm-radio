@@ -12,13 +12,23 @@
   <% end %>
 
   <div>
-    <%= form.label :showname, style: "display: block" %>
+    <%= form.label :showname, 'Show name', style: "display: block" %>
     <%= form.text_field :showname %>
+  </div>
+  
+  <div>
+    <%= form.label :timeslot, style: "display: block" %>
+    <%= form.text_field :timeslot %>
   </div>
 
   <div>
-    <%= form.label :showdescription, style: "display: block" %>
+    <%= form.label :showdescription, 'Show description',style: "display: block" %>
     <%= form.text_field :showdescription %>
+  </div>
+
+  <div>
+    <%= form.label :active, style: "display: block" %>
+    <%= form.number_field :active %>
   </div>
 
   <div>

@@ -47,14 +47,14 @@ class ShowHostsController < ApplicationController
     end
   end
 
-  # DELETE /show_hosts/1 or /show_hosts/1.json
-  def destroy
-    @show_host.destroy
+  def delete
+    @show_host = ShowHost.find(params[:id])
+  end
 
-    respond_to do |format|
-      format.html { redirect_to show_hosts_url, notice: "Show host was successfully destroyed." }
-      format.json { head :no_content }
-    end
+  def destroy
+    @show_host = ShowHost.find(params[:id])
+    @show_host.destroy
+    redirect_to show_hosts_path, notice: "Show host has been successfully deleted."
   end
 
   private

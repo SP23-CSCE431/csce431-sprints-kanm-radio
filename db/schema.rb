@@ -10,17 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_11_195001) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_23_003039) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "calendars", force: :cascade do |t|
-    t.integer "show_id"
-    t.string "timeslot"
-    t.integer "active", default: 0
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "members", force: :cascade do |t|
     t.string "netid"
@@ -34,6 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_11_195001) do
     t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "dj"
   end
 
   create_table "show_hosts", force: :cascade do |t|
@@ -48,6 +41,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_11_195001) do
     t.string "showdescription"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "timeslot"
+    t.integer "active", default: 0
   end
 
 end

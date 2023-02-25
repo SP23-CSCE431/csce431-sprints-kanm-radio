@@ -47,14 +47,14 @@ class MembersController < ApplicationController
     end
   end
 
-  # DELETE /members/1 or /members/1.json
-  def destroy
-    @member.destroy
+  def delete
+    @member = Member.find(params[:id])
+  end
 
-    respond_to do |format|
-      format.html { redirect_to members_url, notice: "Member was successfully destroyed." }
-      format.json { head :no_content }
-    end
+  def destroy
+    @member = Member.find(params[:id])
+    @member.destroy
+    redirect_to members_path, notice: "Member has been successfully deleted."
   end
 
   private
@@ -65,6 +65,6 @@ class MembersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def member_params
-      params.require(:member).permit(:netid, :firstname, :lastname, :uin, :email, :phone, :shirt, :strikes, :points)
+      params.require(:member).permit(:netid, :firstname, :lastname, :uin, :email, :phone, :shirt, :strikes, :points, :dj)
     end
 end
