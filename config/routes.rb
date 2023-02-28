@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :officers
   resources :members
   resources :shows
   resources :show_hosts
