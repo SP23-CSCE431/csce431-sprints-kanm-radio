@@ -32,6 +32,11 @@
   </div>
 
   <div>
+    <%= form.label :specialty, style: "display: block" %>
+    <%= form.select(:specialty, options_for_select([['True', true], ['False', false]], {:selected => @show.specialty}),:prompt => "Select") %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

@@ -6,5 +6,5 @@
   <%= link_to "Edit this show host", edit_show_host_path(@show_host) %> |
   <%= link_to "Back to show hosts", show_hosts_path %>
 
-  <%= button_to "Delete this show host", @show_host, method: :delete %>
+  <%= button_to "Delete this show host", @show_host, :method => :delete, form: { data: { turbo_confirm: "Are you sure you want to delete?" } } %>
 </div>
