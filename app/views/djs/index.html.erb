@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Djs</h1>
+
+<div id="djs">
+  <% @djs.each do |dj| %>
+    <%= render dj %>
+    <p>
+      <%= link_to "Show this dj", dj %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dj", new_dj_path %>
