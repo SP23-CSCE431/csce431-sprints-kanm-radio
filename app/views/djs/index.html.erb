@@ -2,13 +2,31 @@
 
 <h1>Djs</h1>
 
-<div id="djs">
-  <% @djs.each do |dj| %>
-    <%= render dj %>
-    <p>
-      <%= link_to "Show this dj", dj %>
-    </p>
-  <% end %>
-</div>
+<table class="table">
+  <thread>
+    <tr>
+      <th>DJ ID</th>
+      <th>Member ID</th>
+      <th>Speciality</th>
+      <th>Picture</th>
+      <th>Edit DJ</th>
+    </tr>
+  </thread>
 
-<%= link_to "New dj", new_dj_path %>
+
+  <tbody>
+    <% @djs.each do |dj| %>
+      <tr>
+        <td><%= dj.dj_id%></td>
+        <td><%= dj.member_id%></td>
+        <td><%= dj.speciality%></td>
+        <td><%= dj.picture%></td>
+        <td><%= link_to "Show this DJ", dj %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+<%= link_to "<button>New DJ</button>".html_safe, new_dj_path %>
