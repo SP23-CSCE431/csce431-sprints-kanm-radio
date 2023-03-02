@@ -52,7 +52,7 @@ class DjsController < ApplicationController
     @dj.destroy
 
     respond_to do |format|
-      format.html { redirect_to djs_url, notice: "Dj was successfully destroyed." }
+      format.html { redirect_to djs_url, notice: "Dj has been successfully deleted." }
       format.json { head :no_content }
     end
   end
