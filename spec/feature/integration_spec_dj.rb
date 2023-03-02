@@ -8,6 +8,7 @@ RSpec.describe 'Adding a new dj', type: :feature do
 
     # Filling when needs click?
     fill_in "dj[member_id]", with: 'John'
+    #select "John", from: "member_id"
 
     fill_in "dj[speciality]", with: 'Music Specialist'
     fill_in "dj[picture]", with: 'picture.png'
