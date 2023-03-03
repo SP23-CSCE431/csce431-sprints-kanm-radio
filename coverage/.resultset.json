@@ -87,10 +87,81 @@
           0,
           0,
           null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
-      "/csce431/Radio/csce431-sprints-kanm-radio/spec/rails_helper.rb": {
+      "/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/spec/rails_helper.rb": {
+
         "lines": [
           null,
           1,
@@ -157,7 +228,8 @@
           null
         ]
       },
-      "/csce431/Radio/csce431-sprints-kanm-radio/config/environment.rb": {
+      "/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/config/environment.rb": {
+
         "lines": [
           null,
           1,
@@ -166,7 +238,8 @@
           1
         ]
       },
-      "/csce431/Radio/csce431-sprints-kanm-radio/config/application.rb": {
+      "/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/config/application.rb": {
+
         "lines": [
           1,
           null,
@@ -200,6 +273,7 @@
           1
         ]
       },
+
       "/csce431/Radio/csce431-sprints-kanm-radio/config/environments/test.rb": {
         "lines": [
           1,
@@ -280,7 +354,9 @@
           null
         ]
       },
+
       "/csce431/Radio/csce431-sprints-kanm-radio/config/initializers/content_security_policy.rb": {
+
         "lines": [
           null,
           null,
@@ -340,9 +416,7 @@
           null,
           null
         ]
-      },
-      "/csce431/Radio/csce431-sprints-kanm-radio/config/initializers/permissions_policy.rb": {
-        "lines": [
+      }
           null,
           null,
           null,
@@ -356,67 +430,40 @@
           null
         ]
       },
-      "/csce431/Radio/csce431-sprints-kanm-radio/config/routes.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
+
           1,
           null,
           null,
           null,
+          1,
+
+          1,
+          13,
+          null,
+          13,
+          13,
+          24,
+          12,
+          null,
+          2,
+          1,
+          null,
+
+          1,
           null,
           null,
           null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
+
           null
         ]
       },
-      "/csce431/Radio/csce431-sprints-kanm-radio/app/helpers/application_helper.rb": {
+      "/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/csce431-sprints-kanm-radio/app/models/officer.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/csce431/Radio/csce431-sprints-kanm-radio/app/helpers/djs_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/csce431/Radio/csce431-sprints-kanm-radio/app/helpers/members_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/csce431/Radio/csce431-sprints-kanm-radio/app/helpers/show_hosts_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/csce431/Radio/csce431-sprints-kanm-radio/app/helpers/shows_helper.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1677775317
-  }
+
 }

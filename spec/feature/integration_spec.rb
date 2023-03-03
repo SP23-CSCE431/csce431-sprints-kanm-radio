@@ -34,7 +34,7 @@ RSpec.describe 'Adding a new member', type: :feature do
     fill_in "member[email]", with: 'email@email.com'
     click_on 'Create Member'
     visit members_path
-    click_on 'Show this member'
+    click_on 'Show this member', match: :first
     click_on 'Edit this member'
     fill_in "member[netid]", with: '1234'
     click_on 'Update Member'
@@ -51,7 +51,7 @@ RSpec.describe 'Adding a new member', type: :feature do
     fill_in "member[email]", with: 'email@email.com'
     click_on 'Create Member'
     visit members_path
-    click_on 'Show this member'
+    click_on 'Show this member',match: :first
     click_on 'Edit this member'
     fill_in "member[netid]", with: ''
     click_on 'Update Member'
@@ -67,7 +67,7 @@ RSpec.describe 'Adding a new member', type: :feature do
     fill_in "member[email]", with: 'email@email.com'
     click_on 'Create Member'
     visit members_path
-    click_on 'Show this member'
+    click_on 'Show this member', match: :first
     click_on 'Delete this member'
     expect(page).to have_content('Member has been successfully deleted')
   end
@@ -99,7 +99,7 @@ RSpec.describe 'Adding a new show', type: :feature do
     fill_in "show[showdescription]", with: 'John'
     click_on 'Create Show'
     visit shows_path
-    click_on 'Show this show'
+    click_on 'Show this show', match: :first
     click_on 'Edit this show'
     fill_in "show[showname]", with: '1234'
     click_on 'Update Show'
@@ -113,7 +113,7 @@ RSpec.describe 'Adding a new show', type: :feature do
     fill_in "show[showdescription]", with: 'John'
     click_on 'Create Show'
     visit shows_path
-    click_on 'Show this show'
+    click_on 'Show this show', match: :first
     click_on 'Edit this show'
     fill_in "show[showname]", with: ''
     click_on 'Update Show'
@@ -126,7 +126,7 @@ RSpec.describe 'Adding a new show', type: :feature do
     fill_in "show[showdescription]", with: 'John'
     click_on 'Create Show'
     visit shows_path
-    click_on 'Show this show'
+    click_on 'Show this show', match: :first
     click_on 'Delete this show'
     expect(page).to have_content('Show has been successfully deleted.')
   end
@@ -251,5 +251,75 @@ RSpec.describe 'Adding a new show host', type: :feature do
     click_on "Show"
     click_on "Delete this show host"
     expect(page).to have_content('Show host has been successfully deleted.')
+  end
+end
+
+
+RSpec.describe 'Adding a new officer', type: :feature do
+  scenario 'valid inputs' do
+    visit new_member_path
+    fill_in "member[netid]", with: '123'
+    fill_in "member[firstname]", with: 'John'
+    fill_in "member[lastname]", with: 'Appleseed'
+    fill_in "member[uin]", with: '123456789'
+    fill_in "member[email]", with: 'email@email.com'
+    click_on 'Create Member'
+    visit new_officer_path
+    fill_in "officer[officer_id]", with: '111'
+    select 'John', from: "officer[member_id]"
+    fill_in 'officer[positionTitle]', with: 'ceo'
+    click_on "Create Officer"
+    visit officers_path
+    expect(page).to have_content('111')
+  end
+
+  scenario 'invalid inputs' do
+    visit new_officer_path
+    fill_in "officer[officer_id]", with: '123'
+    click_on 'Create Officer'
+    expect(page).to have_content('Member must exist')
+  end
+
+  scenario 'valid update' do
+    visit new_member_path
+    fill_in "member[netid]", with: '123'
+    fill_in "member[firstname]", with: 'John'
+    fill_in "member[lastname]", with: 'Appleseed'
+    fill_in "member[uin]", with: '123456789'
+    fill_in "member[email]", with: 'email@email.com'
+    click_on 'Create Member'
+    visit new_officer_path
+    fill_in "officer[officer_id]", with: '111'
+    select 'John', from: "officer[member_id]"
+    fill_in 'officer[positionTitle]', with: 'ceo'
+    click_on "Create Officer"
+
+    visit officers_path
+    click_on 'Show this officer'
+    click_on 'Edit this officer'
+
+    fill_in 'officer[positionTitle]', with: 'President'
+    click_on "Update Officer"
+    visit officers_path
+    expect(page).to have_content("President")
+  end
+
+  scenario 'valid destroy' do
+    visit new_member_path
+    fill_in "member[netid]", with: '123'
+    fill_in "member[firstname]", with: 'John'
+    fill_in "member[lastname]", with: 'Appleseed'
+    fill_in "member[uin]", with: '123456789'
+    fill_in "member[email]", with: 'email@email.com'
+    click_on 'Create Member'
+    visit new_officer_path
+    fill_in "officer[officer_id]", with: '111'
+    select 'John', from: "officer[member_id]"
+    fill_in 'officer[positionTitle]', with: 'ceo'
+    click_on "Create Officer"
+    visit officers_path
+    click_on "Show this officer"
+    click_on "Destroy this officer"
+    expect(page).to have_content('Officer was successfully destroyed.')
   end
 end

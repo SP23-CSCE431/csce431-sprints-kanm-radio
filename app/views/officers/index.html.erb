@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Officers</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Officer ID</th>
+      <th>Member ID</th>
+      <th>Position Title</th>
+      <th>Picture</th>
+      <th>Edit Officer</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @officers.each do |officer| %>
+      <tr>
+        <td><%= officer.officer_id%></td>
+        <td><%= officer.member_id%></td>
+        <td><%= officer.positionTitle%></td>
+        <td><%= officer.picture%></td>
+        <td><%= link_to "Show this officer", officer %></td>
+      <tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<%= link_to "<button>New officer</button>".html_safe, new_officer_path %>
