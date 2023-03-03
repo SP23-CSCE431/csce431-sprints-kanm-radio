@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dj %>
+
+<div>
+  <%= link_to "Edit this dj", edit_dj_path(@dj) %> |
+  <%= link_to "Back to djs", djs_path %>
+
+  <%= button_to "Destroy this dj", @dj, method: :delete, form: { data: { turbo_confirm: "Are you sure you want to delete?"} } %>
+</div>

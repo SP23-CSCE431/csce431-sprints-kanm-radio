@@ -5,6 +5,9 @@ class Member < ApplicationRecord
     #new officer entity will be one member
     has_one :officer
 
+    # new dj entity will be one member
+    has_one :dj
+
     # phone and shirt columns can be null so not included
     validates :netid, :firstname, :lastname, :uin, :email, presence: true
 end
