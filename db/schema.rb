@@ -10,9 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_27_144937) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_01_223606) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "admins", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_admins_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "djs", force: :cascade do |t|
+    t.integer "dj_id"
+    t.integer "member_id"
+    t.string "speciality"
+    t.string "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "members", force: :cascade do |t|
     t.string "netid"
@@ -26,7 +47,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_27_144937) do
     t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "dj"
+    t.boolean "isdj", default: false
+  end
+
+  create_table "officers", force: :cascade do |t|
+    t.integer "officer_id"
+    t.integer "member_id"
+    t.string "positionTitle"
+    t.string "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "show_hosts", force: :cascade do |t|
