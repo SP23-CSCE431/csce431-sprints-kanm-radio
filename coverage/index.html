@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-03-03T20:13:36+00:00">2023-03-03T20:13:36+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-03-04T15:09:17+00:00">2023-03-04T15:09:17+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.67%
+  98.76%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.67
+         1.64
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>601</b> relevant lines,
-    <span class="green"><b>593</b> lines covered</span> and
+    <b>643</b> relevant lines,
+    <span class="green"><b>635</b> lines covered</span> and
     <span class="red"><b>8</b> lines missed. </span>
     (<span class="green">
-  98.67%
+  98.76%
 </span>
 )
   </div>
@@ -216,7 +216,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#72876d476007dba49114887fc7f24405bda4ac38" class="src_link" title="app/models/dj.rb">app/models/dj.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
@@ -238,7 +238,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#67948a704acc7cb35f4dacdf76469eca257f3c94" class="src_link" title="app/models/officer.rb">app/models/officer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
@@ -260,7 +260,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#be287649ce99e5a6e6f5b2fd076159852de91871" class="src_link" title="app/models/show_host.rb">app/models/show_host.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
@@ -381,9 +381,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5b1e5f8e78e2db7e74ccddf46b539c7de07b04da" class="src_link" title="spec/feature/integration_spec.rb">spec/feature/integration_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">399</td>
-            <td class="cell--number">333</td>
-            <td class="cell--number">333</td>
+            <td class="cell--number">421</td>
+            <td class="cell--number">355</td>
+            <td class="cell--number">355</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -403,11 +403,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#94d0578aa9daf3a669206deb5725c0f95b2eb8c1" class="src_link" title="spec/unit/unit_spec.rb">spec/unit/unit_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">36</td>
-            <td class="cell--number">17</td>
-            <td class="cell--number">17</td>
+            <td class="cell--number">71</td>
+            <td class="cell--number">37</td>
+            <td class="cell--number">37</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.12</td>
+            <td class="cell--number">1.19</td>
             
           </tr>
         
@@ -2710,7 +2710,7 @@
 
             
 
-            <code class="ruby">      format.html { redirect_to officers_url, notice: &quot;Officer was successfully destroyed.&quot; }</code>
+            <code class="ruby">      format.html { redirect_to officers_url, notice: &quot;Officer was successfully deleted.&quot; }</code>
           </li>
         </div>
       
@@ -4906,7 +4906,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">  # dj and member have 1:1 relationship</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
@@ -4917,7 +4928,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -5144,7 +5155,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">    # member and officer have a 1:1 relationship</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
@@ -5155,7 +5177,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -5258,7 +5280,7 @@
 
             
 
-            <code class="ruby">    validates :showname, presence: true</code>
+            <code class="ruby">    validates :showname, :active, :timeslot, presence: true</code>
           </li>
         </div>
       
@@ -5316,13 +5338,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="2">
+            
             
 
             
 
-            <code class="ruby">    belongs_to :show</code>
+            <code class="ruby">    #show host has one show and one member</code>
           </li>
         </div>
       
@@ -5333,12 +5355,23 @@
 
             
 
+            <code class="ruby">    belongs_to :show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    belongs_to :member</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -7767,8 +7800,8 @@
     
 
     <div class="t-line-summary">
-      <b>333</b> relevant lines.
-      <span class="green"><b>333</b> lines covered</span> and
+      <b>355</b> relevant lines.
+      <span class="green"><b>355</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -8688,7 +8721,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
@@ -8699,7 +8732,7 @@
 
             
 
-            <code class="ruby">    visit shows_path</code>
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
@@ -8710,12 +8743,34 @@
 
             
 
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit shows_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content(&#39;123&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="86">
+          <li class="never" data-hits="" data-linenumber="88">
             
             
 
@@ -8726,35 +8781,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
+          <li class="never" data-hits="" data-linenumber="89">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="88">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="89">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
           </li>
         </div>
       
@@ -8765,7 +8798,7 @@
 
             
 
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;&#39;</code>
+            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
           </li>
         </div>
       
@@ -8776,7 +8809,7 @@
 
             
 
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+            <code class="ruby">    visit new_show_path</code>
           </li>
         </div>
       
@@ -8787,7 +8820,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;&#39;</code>
           </li>
         </div>
       
@@ -8798,12 +8831,34 @@
 
             
 
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="94">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="95">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content(&quot;Showname can&#39;t be blank&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="94">
+          <li class="never" data-hits="" data-linenumber="96">
             
             
 
@@ -8814,35 +8869,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="95">
+          <li class="never" data-hits="" data-linenumber="97">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="96">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid update&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="97">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
           </li>
         </div>
       
@@ -8853,7 +8886,7 @@
 
             
 
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+            <code class="ruby">  scenario &#39;valid update&#39; do</code>
           </li>
         </div>
       
@@ -8864,7 +8897,7 @@
 
             
 
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+            <code class="ruby">    visit new_show_path</code>
           </li>
         </div>
       
@@ -8875,7 +8908,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
           </li>
         </div>
       
@@ -8886,7 +8919,7 @@
 
             
 
-            <code class="ruby">    visit shows_path</code>
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
           </li>
         </div>
       
@@ -8897,7 +8930,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
@@ -8908,7 +8941,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Edit this show&#39;</code>
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
@@ -8919,7 +8952,7 @@
 
             
 
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;1234&#39;</code>
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
           </li>
         </div>
       
@@ -8930,7 +8963,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Update Show&#39;</code>
+            <code class="ruby">    visit shows_path</code>
           </li>
         </div>
       
@@ -8941,7 +8974,7 @@
 
             
 
-            <code class="ruby">    visit shows_path</code>
+            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
           </li>
         </div>
       
@@ -8952,133 +8985,23 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;1234&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="108">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="109">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="110">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;invalid update&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="111">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="112">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="113">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="114">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="115">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit shows_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="116">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="117">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">    click_on &#39;Edit this show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="118">
+          <li class="covered" data-hits="1" data-linenumber="108">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;&#39;</code>
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;1234&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="119">
+          <li class="covered" data-hits="1" data-linenumber="109">
             <span class="hits">1</span>
             
 
@@ -9089,95 +9012,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="120">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;Showname can&#39;t be blank&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="121">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="122">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="123">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid destroy&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="124">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="125">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="126">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="127">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="128">
+          <li class="covered" data-hits="1" data-linenumber="110">
             <span class="hits">1</span>
             
 
@@ -9188,810 +9023,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="129">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="130">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Delete this show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="131">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Show has been successfully deleted.&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="132">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="133">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="134">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="135">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">RSpec.describe &#39;Adding a new show host&#39;, type: :feature do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="136">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid inputs&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="137">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="138">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="139">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="140">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="141">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="142">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="143">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="144">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="145">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="146">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="147">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="148">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit shows_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="149">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_host_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="150">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="151">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="152">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="153">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit show_hosts_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="154">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;123&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="155">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="156">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="157">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="158">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="159">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="160">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="161">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="162">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="163">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="164">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="165">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="166">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="167">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="168">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="169">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit shows_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="170">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_host_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="171">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="172">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="173">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Show must exist&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="174">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="175">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="176">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid update&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="177">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="178">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="179">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="180">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="181">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="182">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="183">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="184">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="185">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="186">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="187">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="188">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="189">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;1234&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="190">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="191">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="192">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_host_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="193">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="194">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="195">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="196">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit show_hosts_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="197">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Show&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="198">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Edit this show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="199">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;1234&#39;, from: &quot;show_host[show_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="200">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Update Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="201">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit show_hosts_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="202">
+          <li class="covered" data-hits="1" data-linenumber="111">
             <span class="hits">1</span>
             
 
@@ -10002,7 +9034,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="203">
+          <li class="never" data-hits="" data-linenumber="112">
             
             
 
@@ -10013,7 +9045,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="204">
+          <li class="never" data-hits="" data-linenumber="113">
             
             
 
@@ -10024,95 +9056,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="205">
+          <li class="covered" data-hits="1" data-linenumber="114">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  scenario &#39;valid update&#39; do</code>
+            <code class="ruby">  scenario &#39;invalid update&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="206">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="207">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="208">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="209">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="210">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="211">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="212">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="213">
+          <li class="covered" data-hits="1" data-linenumber="115">
             <span class="hits">1</span>
             
 
@@ -10123,7 +9078,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="214">
+          <li class="covered" data-hits="1" data-linenumber="116">
             <span class="hits">1</span>
             
 
@@ -10134,7 +9089,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="215">
+          <li class="covered" data-hits="1" data-linenumber="117">
             <span class="hits">1</span>
             
 
@@ -10145,7 +9100,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="216">
+          <li class="covered" data-hits="1" data-linenumber="118">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="119">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="120">
             <span class="hits">1</span>
             
 
@@ -10156,315 +9133,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="217">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="218">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;1234&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="219">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="220">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="221">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_host_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="222">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="223">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="224">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="225">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit show_hosts_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="226">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Show&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="227">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Edit this show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="228">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;&#39;, from: &quot;show_host[show_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="229">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Update Show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="230">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Show must exist&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="231">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="232">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="233">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid destroy&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="234">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="235">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="236">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="237">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="238">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="239">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="240">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="241">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_show_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="242">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="243">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="244">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Show&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="245">
+          <li class="covered" data-hits="1" data-linenumber="121">
             <span class="hits">1</span>
             
 
@@ -10475,95 +9144,62 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="246">
+          <li class="covered" data-hits="1" data-linenumber="122">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit new_show_host_path</code>
+            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="247">
+          <li class="covered" data-hits="1" data-linenumber="123">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
+            <code class="ruby">    click_on &#39;Edit this show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="248">
+          <li class="covered" data-hits="1" data-linenumber="124">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="249">
+          <li class="covered" data-hits="1" data-linenumber="125">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+            <code class="ruby">    click_on &#39;Update Show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="250">
+          <li class="covered" data-hits="1" data-linenumber="126">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit show_hosts_path</code>
+            <code class="ruby">    expect(page).to have_content(&quot;Showname can&#39;t be blank&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="251">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Show&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="252">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Delete this show host&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="253">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Show host has been successfully deleted.&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="254">
+          <li class="never" data-hits="" data-linenumber="127">
             
             
 
@@ -10574,7 +9210,150 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="255">
+          <li class="never" data-hits="" data-linenumber="128">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="129">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid delete&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="130">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="131">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="132">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="133">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="134">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="135">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="136">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit shows_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="137">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Show this show&#39;, match: :first</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="138">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Delete this show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="139">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Show has been successfully deleted.&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="140">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="141">
             
             
 
@@ -10585,7 +9364,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="256">
+          <li class="never" data-hits="" data-linenumber="142">
             
             
 
@@ -10596,29 +9375,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="257">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="258">
+          <li class="covered" data-hits="1" data-linenumber="143">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">RSpec.describe &#39;Adding a new officer&#39;, type: :feature do</code>
+            <code class="ruby">RSpec.describe &#39;Adding a new show host&#39;, type: :feature do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="259">
+          <li class="covered" data-hits="1" data-linenumber="144">
             <span class="hits">1</span>
             
 
@@ -10629,7 +9397,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="260">
+          <li class="covered" data-hits="1" data-linenumber="145">
             <span class="hits">1</span>
             
 
@@ -10640,7 +9408,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="261">
+          <li class="covered" data-hits="1" data-linenumber="146">
             <span class="hits">1</span>
             
 
@@ -10651,7 +9419,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="262">
+          <li class="covered" data-hits="1" data-linenumber="147">
             <span class="hits">1</span>
             
 
@@ -10662,7 +9430,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="263">
+          <li class="covered" data-hits="1" data-linenumber="148">
             <span class="hits">1</span>
             
 
@@ -10673,7 +9441,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="264">
+          <li class="covered" data-hits="1" data-linenumber="149">
             <span class="hits">1</span>
             
 
@@ -10684,7 +9452,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="265">
+          <li class="covered" data-hits="1" data-linenumber="150">
             <span class="hits">1</span>
             
 
@@ -10695,7 +9463,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="266">
+          <li class="covered" data-hits="1" data-linenumber="151">
             <span class="hits">1</span>
             
 
@@ -10706,73 +9474,150 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="267">
+          <li class="covered" data-hits="1" data-linenumber="152">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit new_officer_path</code>
+            <code class="ruby">    visit new_show_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="268">
+          <li class="covered" data-hits="1" data-linenumber="153">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    select &#39;John&#39;, from: &quot;officer[member_id]&quot;</code>
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="269">
+          <li class="covered" data-hits="1" data-linenumber="154">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    fill_in &#39;officer[positionTitle]&#39;, with: &#39;ceo&#39;</code>
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="270">
+          <li class="covered" data-hits="1" data-linenumber="155">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    click_on &quot;Create Officer&quot;</code>
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="271">
+          <li class="covered" data-hits="1" data-linenumber="156">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit officers_path</code>
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="272">
+          <li class="covered" data-hits="1" data-linenumber="157">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;ceo&#39;)</code>
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="273">
+          <li class="covered" data-hits="1" data-linenumber="158">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit shows_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="159">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_host_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="160">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="161">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="162">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="163">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit show_hosts_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="164">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;123&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="165">
             
             
 
@@ -10783,7 +9628,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="274">
+          <li class="never" data-hits="" data-linenumber="166">
             
             
 
@@ -10794,7 +9639,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="275">
+          <li class="covered" data-hits="1" data-linenumber="167">
             <span class="hits">1</span>
             
 
@@ -10805,40 +9650,205 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="276">
+          <li class="covered" data-hits="1" data-linenumber="168">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit new_officer_path</code>
+            <code class="ruby">    visit new_member_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="277">
+          <li class="covered" data-hits="1" data-linenumber="169">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    click_on &#39;Create Officer&#39;</code>
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="278">
+          <li class="covered" data-hits="1" data-linenumber="170">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;Member must exist&#39;)</code>
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="279">
+          <li class="covered" data-hits="1" data-linenumber="171">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="172">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="173">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="174">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="175">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="176">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="177">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="178">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="179">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="180">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="181">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit shows_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="182">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_host_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="183">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="184">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="185">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Show must exist&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="186">
             
             
 
@@ -10849,7 +9859,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="280">
+          <li class="never" data-hits="" data-linenumber="187">
             
             
 
@@ -10860,13 +9870,1036 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="281">
+          <li class="covered" data-hits="1" data-linenumber="188">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">  scenario &#39;valid update&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="189">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="190">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="191">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="192">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="193">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="194">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="195">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="196">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="197">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="198">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="199">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="200">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="201">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="202">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="203">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;2&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="204">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="205">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="206">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="207">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="208">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_host_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="209">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="210">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="211">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="212">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit show_hosts_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="213">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Show&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="214">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Edit this show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="215">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;2&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="216">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Update Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="217">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit show_hosts_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="218">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;2&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="219">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="220">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="221">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;invalid update&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="222">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="223">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="224">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="225">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="226">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="227">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="228">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="229">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="230">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="231">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="232">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="233">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="234">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="235">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="236">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;1234&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="237">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="238">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="239">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="240">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="241">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_host_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="242">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;1234&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="243">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="244">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="245">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit show_hosts_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="246">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Show&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="247">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Edit this show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="248">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="249">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Update Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="250">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Show must exist&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="251">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="252">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="253">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid delete&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="254">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="255">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="256">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="257">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="258">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="259">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="260">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="261">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="262">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showname]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="263">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[showdescription]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="264">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[active]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="265">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;show[timeslot]&quot;, with: &#39;0&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="266">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="267">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit shows_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="268">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_show_host_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="269">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[show_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="270">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;123&#39;, from: &quot;show_host[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="271">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="272">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit show_hosts_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="273">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Show&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="274">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Delete this show host&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="275">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Show host has been successfully deleted.&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="276">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="277">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="278">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="279">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="280">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &#39;Adding a new officer&#39;, type: :feature do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="281">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid inputs&#39; do</code>
           </li>
         </div>
       
@@ -10992,13 +11025,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="293">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="293">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    visit officers_path</code>
           </li>
         </div>
       
@@ -11009,89 +11042,12 @@
 
             
 
-            <code class="ruby">    visit officers_path</code>
+            <code class="ruby">    expect(page).to have_content(&#39;ceo&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="295">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Show this officer&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="296">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Edit this officer&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="297">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="298">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &#39;officer[positionTitle]&#39;, with: &#39;President&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="299">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &quot;Update Officer&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="300">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit officers_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="301">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;President&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="302">
+          <li class="never" data-hits="" data-linenumber="295">
             
             
 
@@ -11102,7 +11058,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="303">
+          <li class="never" data-hits="" data-linenumber="296">
             
             
 
@@ -11113,95 +11069,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="304">
+          <li class="covered" data-hits="1" data-linenumber="297">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  scenario &#39;valid destroy&#39; do</code>
+            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="305">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="306">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="307">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="308">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="309">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="310">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="311">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="312">
+          <li class="covered" data-hits="1" data-linenumber="298">
             <span class="hits">1</span>
             
 
@@ -11212,7 +11091,150 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="313">
+          <li class="covered" data-hits="1" data-linenumber="299">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Officer&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="300">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Member must exist&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="301">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="302">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="303">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid update&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="304">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="305">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="306">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="307">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="308">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="309">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="310">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="311">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_officer_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="312">
             <span class="hits">1</span>
             
 
@@ -11223,7 +11245,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="314">
+          <li class="covered" data-hits="1" data-linenumber="313">
             <span class="hits">1</span>
             
 
@@ -11234,13 +11256,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="315">
+          <li class="covered" data-hits="1" data-linenumber="314">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">    click_on &quot;Create Officer&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="315">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -11262,7 +11295,7 @@
 
             
 
-            <code class="ruby">    click_on &quot;Show this officer&quot;</code>
+            <code class="ruby">    click_on &#39;Show this officer&#39;</code>
           </li>
         </div>
       
@@ -11273,51 +11306,51 @@
 
             
 
-            <code class="ruby">    click_on &quot;Destroy this officer&quot;</code>
+            <code class="ruby">    click_on &#39;Edit this officer&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="319">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Officer was successfully destroyed.&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="320">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="321">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="322">
+          <li class="never" data-hits="" data-linenumber="319">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="320">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &#39;officer[positionTitle]&#39;, with: &#39;President&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="321">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Update Officer&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="322">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit officers_path</code>
           </li>
         </div>
       
@@ -11328,177 +11361,12 @@
 
             
 
-            <code class="ruby">RSpec.describe &#39;Adding a new dj&#39;, type: :feature do</code>
+            <code class="ruby">    expect(page).to have_content(&quot;President&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="324">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid inputs&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="325">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="326">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="327">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="328">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="329">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="330">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="331">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Member&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="332">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_dj_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="333">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    select &#39;John&#39;, from: &quot;dj[member_id]&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="334">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;dj[speciality]&quot;, with: &#39;Music Specialist&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="335">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;dj[picture]&quot;, with: &#39;picture.png&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="336">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="337">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit djs_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="338">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&#39;Music Specialist&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="339">
+          <li class="never" data-hits="" data-linenumber="324">
             
             
 
@@ -11509,7 +11377,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="340">
+          <li class="never" data-hits="" data-linenumber="325">
             
             
 
@@ -11520,35 +11388,200 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="326">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid Delete&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="327">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="328">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="329">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="330">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="331">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="332">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="333">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="334">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_officer_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="335">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;John&#39;, from: &quot;officer[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="336">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &#39;officer[positionTitle]&#39;, with: &#39;ceo&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="337">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Create Officer&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="338">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit officers_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="339">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Show this officer&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="340">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &quot;Delete this officer&quot;</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="341">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
+            <code class="ruby">    expect(page).to have_content(&#39;Officer was successfully deleted.&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="342">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="342">
+            
             
 
             
 
-            <code class="ruby">    visit new_dj_path</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="343">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="343">
+            
             
 
             
 
-            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -11570,45 +11603,23 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&quot;Member must exist&quot;)</code>
+            <code class="ruby">RSpec.describe &#39;Adding a new dj&#39;, type: :feature do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="346">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="347">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="348">
+          <li class="covered" data-hits="1" data-linenumber="346">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  scenario &#39;valid update&#39; do</code>
+            <code class="ruby">  scenario &#39;valid inputs&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="349">
+          <li class="covered" data-hits="1" data-linenumber="347">
             <span class="hits">1</span>
             
 
@@ -11619,7 +11630,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="350">
+          <li class="covered" data-hits="1" data-linenumber="348">
             <span class="hits">1</span>
             
 
@@ -11630,7 +11641,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="351">
+          <li class="covered" data-hits="1" data-linenumber="349">
             <span class="hits">1</span>
             
 
@@ -11641,7 +11652,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="352">
+          <li class="covered" data-hits="1" data-linenumber="350">
             <span class="hits">1</span>
             
 
@@ -11652,7 +11663,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="353">
+          <li class="covered" data-hits="1" data-linenumber="351">
             <span class="hits">1</span>
             
 
@@ -11663,7 +11674,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="354">
+          <li class="covered" data-hits="1" data-linenumber="352">
             <span class="hits">1</span>
             
 
@@ -11674,7 +11685,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="355">
+          <li class="covered" data-hits="1" data-linenumber="353">
             <span class="hits">1</span>
             
 
@@ -11685,7 +11696,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="356">
+          <li class="covered" data-hits="1" data-linenumber="354">
             <span class="hits">1</span>
             
 
@@ -11696,7 +11707,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="357">
+          <li class="covered" data-hits="1" data-linenumber="355">
             <span class="hits">1</span>
             
 
@@ -11707,18 +11718,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="358">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="359">
+          <li class="covered" data-hits="1" data-linenumber="356">
             <span class="hits">1</span>
             
 
@@ -11729,7 +11729,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="360">
+          <li class="covered" data-hits="1" data-linenumber="357">
             <span class="hits">1</span>
             
 
@@ -11740,13 +11740,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="361">
+          <li class="covered" data-hits="1" data-linenumber="358">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">    click_on &#39;Create Dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="359">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit djs_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="360">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Music Specialist&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="361">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -11768,7 +11801,7 @@
 
             
 
-            <code class="ruby">    visit djs_path</code>
+            <code class="ruby">  scenario &#39;invalid inputs&#39; do</code>
           </li>
         </div>
       
@@ -11779,7 +11812,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Show this DJ&#39;</code>
+            <code class="ruby">    visit new_dj_path</code>
           </li>
         </div>
       
@@ -11790,18 +11823,18 @@
 
             
 
-            <code class="ruby">    click_on &#39;Edit this dj&#39;</code>
+            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="366">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="366">
+            
             
 
             
 
-            <code class="ruby">    click_on &#39;Update Dj&#39;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -11812,18 +11845,18 @@
 
             
 
-            <code class="ruby">    visit djs_path</code>
+            <code class="ruby">    expect(page).to have_content(&quot;Member must exist&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="368">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="368">
+            
             
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;picture.png&#39;)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -11834,18 +11867,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="370">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="370">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  scenario &#39;valid update&#39; do</code>
           </li>
         </div>
       
@@ -11856,7 +11889,7 @@
 
             
 
-            <code class="ruby">  scenario &#39;invalid update&#39; do</code>
+            <code class="ruby">    visit new_member_path</code>
           </li>
         </div>
       
@@ -11867,7 +11900,7 @@
 
             
 
-            <code class="ruby">    visit new_dj_path</code>
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
           </li>
         </div>
       
@@ -11878,100 +11911,12 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="374">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="375">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;Member must exist&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="376">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="377">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="378">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  scenario &#39;valid delete&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="379">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    visit new_member_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="380">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="381">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="382">
+          <li class="covered" data-hits="1" data-linenumber="374">
             <span class="hits">1</span>
             
 
@@ -11982,7 +11927,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="383">
+          <li class="covered" data-hits="1" data-linenumber="375">
             <span class="hits">1</span>
             
 
@@ -11993,7 +11938,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="384">
+          <li class="covered" data-hits="1" data-linenumber="376">
             <span class="hits">1</span>
             
 
@@ -12004,7 +11949,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="385">
+          <li class="covered" data-hits="1" data-linenumber="377">
             <span class="hits">1</span>
             
 
@@ -12015,7 +11960,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="386">
+          <li class="covered" data-hits="1" data-linenumber="378">
             <span class="hits">1</span>
             
 
@@ -12026,7 +11971,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="387">
+          <li class="covered" data-hits="1" data-linenumber="379">
             <span class="hits">1</span>
             
 
@@ -12037,29 +11982,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="388">
+          <li class="never" data-hits="" data-linenumber="380">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="389">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="390">
+          <li class="covered" data-hits="1" data-linenumber="381">
             <span class="hits">1</span>
             
 
@@ -12070,7 +12004,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="391">
+          <li class="covered" data-hits="1" data-linenumber="382">
             <span class="hits">1</span>
             
 
@@ -12081,7 +12015,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="392">
+          <li class="covered" data-hits="1" data-linenumber="383">
             <span class="hits">1</span>
             
 
@@ -12092,7 +12026,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="393">
+          <li class="never" data-hits="" data-linenumber="384">
             
             
 
@@ -12103,7 +12037,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="394">
+          <li class="covered" data-hits="1" data-linenumber="385">
             <span class="hits">1</span>
             
 
@@ -12114,7 +12048,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="395">
+          <li class="covered" data-hits="1" data-linenumber="386">
             <span class="hits">1</span>
             
 
@@ -12125,13 +12059,112 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="396">
+          <li class="covered" data-hits="1" data-linenumber="387">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    click_on &#39;Destroy this dj&#39;</code>
+            <code class="ruby">    click_on &#39;Edit this dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="388">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Update Dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="389">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit djs_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="390">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;picture.png&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="391">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="392">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="393">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;invalid update&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="394">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_dj_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="395">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="396">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -12142,7 +12175,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;Dj has been successfully deleted&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(&quot;Member must exist&quot;)</code>
           </li>
         </div>
       
@@ -12159,6 +12192,248 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="399">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="400">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  scenario &#39;valid delete&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="401">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_member_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="402">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[netid]&quot;, with: &#39;123&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="403">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[firstname]&quot;, with: &#39;John&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="404">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[lastname]&quot;, with: &#39;Appleseed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="405">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[uin]&quot;, with: &#39;123456789&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="406">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;member[email]&quot;, with: &#39;email@email.com&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="407">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Member&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="408">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit new_dj_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="409">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    select &#39;John&#39;, from: &quot;dj[member_id]&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="410">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="411">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="412">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;dj[speciality]&quot;, with: &#39;Music Specialist&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="413">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fill_in &quot;dj[picture]&quot;, with: &#39;picture.png&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="414">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="415">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="416">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit djs_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="417">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Show this DJ&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="418">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Delete this dj&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="419">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&#39;Dj has been successfully deleted.&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="420">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="421">
             
             
 
@@ -12911,8 +13186,8 @@
     
 
     <div class="t-line-summary">
-      <b>17</b> relevant lines.
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>37</b> relevant lines.
+      <span class="green"><b>37</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -12979,8 +13254,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="5" data-linenumber="6">
+            <span class="hits">5</span>
             
 
             
@@ -13106,7 +13381,7 @@
 
             
 
-            <code class="ruby">  it &#39;is not valid without a name&#39; do</code>
+            <code class="ruby">  it &#39;is not valid without a firstname&#39; do</code>
           </li>
         </div>
       
@@ -13117,7 +13392,7 @@
 
             
 
-            <code class="ruby">    subject.netid = nil</code>
+            <code class="ruby">    subject.firstname= nil</code>
           </li>
         </div>
       
@@ -13150,18 +13425,18 @@
 
             
 
-            <code class="ruby">end     </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  it &#39;is not valid without a lastname&#39; do</code>
           </li>
         </div>
       
@@ -13172,7 +13447,7 @@
 
             
 
-            <code class="ruby">RSpec.describe Show, type: :model do</code>
+            <code class="ruby">    subject.lastname = nil</code>
           </li>
         </div>
       
@@ -13183,23 +13458,12 @@
 
             
 
-            <code class="ruby">  subject do</code>
+            <code class="ruby">    expect(subject).not_to be_valid</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="25">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    described_class.new(showname: &quot;name&quot;, showdescription: &quot;name&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -13210,7 +13474,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -13221,13 +13485,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is not valid without a uin&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="28">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  it &#39;is valid with valid attributes&#39; do</code>
+            <code class="ruby">    subject.uin = nil</code>
           </li>
         </div>
       
@@ -13238,7 +13513,7 @@
 
             
 
-            <code class="ruby">    expect(subject).to be_valid</code>
+            <code class="ruby">    expect(subject).not_to be_valid</code>
           </li>
         </div>
       
@@ -13271,7 +13546,7 @@
 
             
 
-            <code class="ruby">  it &#39;is not valid without a name&#39; do</code>
+            <code class="ruby">  it &#39;is not valid without a email&#39; do</code>
           </li>
         </div>
       
@@ -13282,7 +13557,7 @@
 
             
 
-            <code class="ruby">    subject.showname = nil</code>
+            <code class="ruby">    subject.email = nil</code>
           </li>
         </div>
       
@@ -13316,6 +13591,391 @@
             
 
             <code class="ruby">end     </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Show, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  subject do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="40">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    described_class.new(showname: &quot;name&quot;, showdescription: &quot;name&quot;, active: &quot;name&quot; , timeslot: &quot;name&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is valid with valid attributes&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(subject).to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is not valid without a name&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    subject.showname = nil</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(subject).not_to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is not valid without a timeslot&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    subject.timeslot = nil</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(subject).not_to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is not valid without active&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    subject.active = nil</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(subject).not_to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">end  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe ShowHost, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  subject do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    described_class.new(show_id: &quot;name&quot;, member_id: &quot;name&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;is valid with valid attributes&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(subject).to be_valid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">end  </code>
           </li>
         </div>
       
