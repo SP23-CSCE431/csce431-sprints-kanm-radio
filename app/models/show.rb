@@ -3,5 +3,5 @@ class Show < ApplicationRecord
     # whenever a show gets deleted, the respective show gets deleted as well
     has_many :show_hosts, dependent: :destroy
 
-    validates :showname, presence: true
+    validates :showname, :active, :timeslot, presence: true
 end
