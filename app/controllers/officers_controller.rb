@@ -52,7 +52,7 @@ class OfficersController < ApplicationController
     @officer.destroy
 
     respond_to do |format|
-      format.html { redirect_to officers_url, notice: "Officer was successfully destroyed." }
+      format.html { redirect_to officers_url, notice: "Officer was successfully deleted." }
       format.json { head :no_content }
     end
   end
