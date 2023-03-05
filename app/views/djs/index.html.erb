@@ -1,10 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>DJs</h1>
+<h1>Djs</h1>
 
 <table class="table">
   <thread>
     <tr>
+      <th>DJ ID</th>
       <th>Member ID</th>
       <th>Speciality</th>
       <th>Picture</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @djs.each do |dj| %>
       <tr>
+        <td><%= dj.dj_id%></td>
         <td><%= dj.member_id%></td>
         <td><%= dj.speciality%></td>
         <td><%= dj.picture%></td>
