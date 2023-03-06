@@ -1,6 +1,7 @@
 {
   "RSpec": {
     "coverage": {
+
       "/KANM_Radio_App/KANM_Radio_App/spec/feature/integration_spec.rb": {
         "lines": [
           null,
