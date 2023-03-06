@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+  # devise_for :users
   resources :officers
   resources :members
   resources :shows
@@ -13,8 +15,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  root "members#index"
-
+  root "pages#home"
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+    omniauth_callbacks: 'users/omniauth_callbacks'
+  }
   get "/members", to: "members#index"
   get "/members/new", to: "members#new"
   post "/members", to: "members#create"
