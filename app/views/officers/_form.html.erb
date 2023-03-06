@@ -12,11 +12,6 @@
   <% end %>
 
   <div>
-    <%= form.label :officer_id, style: "display: block" %>
-    <%= form.number_field :officer_id %>
-  </div>
-
-  <div>
     <%= form.label :member_id, style: "display: block" %>
     <%= form.select :member_id, Member.order(:firstname).map {|member| [member.firstname, member.id]}, include_blank:true, id: "id_of_the_book_id_select_box"%>
   </div>

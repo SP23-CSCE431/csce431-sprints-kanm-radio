@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema[7.0].define(version: 2023_03_04_210444) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "djs", force: :cascade do |t|
-    t.integer "dj_id"
     t.integer "member_id"
     t.string "speciality"
     t.string "picture"
@@ -39,7 +39,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_04_210444) do
   end
 
   create_table "officers", force: :cascade do |t|
-    t.integer "officer_id"
     t.integer "member_id"
     t.string "positionTitle"
     t.string "picture"
