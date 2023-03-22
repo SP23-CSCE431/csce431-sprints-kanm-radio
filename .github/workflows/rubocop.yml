@@ -13,10 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Run rubocop
+      - name: Install postgres client
+        run: sudo apt-get install libpq-dev
+      - name: Install dependencies
         run: |
-          bundle exec rubocop
+          gem install bundler
+          bundler install
+      - name: Create database
+        run: |
+          bundler exec rails db:create RAILS_ENV=test
+          bundler exec rails db:migrate RAILS_ENV=test
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install
+      - name: Run tests
+        run: bundler exec rubocop
