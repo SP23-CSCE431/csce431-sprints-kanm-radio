@@ -1,0 +1,22 @@
+env:
+  RUBY_VERSION: 3.1.2
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: password
+  DATABASE_USER: postgres
+  DATABASE_PASSWORD: password
+
+name: Rubocop
+
+on: [push, pull_request]
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+      - name: Run rubocop
+        run: |
+          bundle exec rubocop

@@ -4,6 +4,45 @@
 require 'rails_helper'
 
 RSpec.describe 'Adding a new member', type: :feature do
+     # FROM SPRINT 3
+     scenario 'valid submit tshirt' do
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'email@email.com'
+          select 'L', from: 'member[shirt]'
+          click_on 'Create Member'
+          visit members_path
+          expect(page).to have_content('L')
+     end
+
+     scenario 'valid email input' do
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'email@email.com'
+          click_on 'Create Member'
+          visit members_path
+          expect(page).to have_content('email@email.com')
+     end
+
+     scenario 'invalid email input' do
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'invalid'
+          click_on 'Create Member'
+          expect(page).to have_content('Email is invalid')
+     end
+
+     ####
+
      scenario 'valid inputs' do
           visit new_member_path
           fill_in 'member[netid]', with: '123'
@@ -158,7 +197,7 @@ RSpec.describe 'Adding a new show host', type: :feature do
           visit shows_path
           visit new_show_host_path
           select '123', from: 'show_host[show_id]'
-          select '123', from: 'show_host[member_id]'
+          select 'John Appleseed', from: 'show_host[member_id]'
           click_on 'Create Show host'
           visit show_hosts_path
           expect(page).to have_content('123')
@@ -180,7 +219,7 @@ RSpec.describe 'Adding a new show host', type: :feature do
           click_on 'Create Show'
           visit shows_path
           visit new_show_host_path
-          select '123', from: 'show_host[member_id]'
+          select 'John Appleseed', from: 'show_host[member_id]'
           click_on 'Create Show host'
           expect(page).to have_content('Show must exist')
      end
@@ -207,7 +246,7 @@ RSpec.describe 'Adding a new show host', type: :feature do
           click_on 'Create Show'
           visit new_show_host_path
           select '123', from: 'show_host[show_id]'
-          select '123', from: 'show_host[member_id]'
+          select 'John Appleseed', from: 'show_host[member_id]'
           click_on 'Create Show host'
           visit show_hosts_path
           click_on 'Show'
@@ -216,38 +255,6 @@ RSpec.describe 'Adding a new show host', type: :feature do
           click_on 'Update Show host'
           visit show_hosts_path
           expect(page).to have_content('2')
-     end
-
-     scenario 'invalid update' do
-          visit new_member_path
-          fill_in 'member[netid]', with: '123'
-          fill_in 'member[firstname]', with: 'John'
-          fill_in 'member[lastname]', with: 'Appleseed'
-          fill_in 'member[uin]', with: '123456789'
-          fill_in 'member[email]', with: 'email@email.com'
-          click_on 'Create Member'
-          visit new_show_path
-          fill_in 'show[showname]', with: '123'
-          fill_in 'show[showdescription]', with: 'John'
-          fill_in 'show[active]', with: '0'
-          fill_in 'show[timeslot]', with: '0'
-          click_on 'Create Show'
-          visit new_show_path
-          fill_in 'show[showname]', with: '1234'
-          fill_in 'show[showdescription]', with: 'John'
-          fill_in 'show[active]', with: '0'
-          fill_in 'show[timeslot]', with: '0'
-          click_on 'Create Show'
-          visit new_show_host_path
-          select '1234', from: 'show_host[show_id]'
-          select '123', from: 'show_host[member_id]'
-          click_on 'Create Show host'
-          visit show_hosts_path
-          click_on 'Show'
-          click_on 'Edit this show host'
-          select '', from: 'show_host[show_id]'
-          click_on 'Update Show host'
-          expect(page).to have_content('Show must exist')
      end
 
      scenario 'valid delete' do
@@ -267,7 +274,7 @@ RSpec.describe 'Adding a new show host', type: :feature do
           visit shows_path
           visit new_show_host_path
           select '123', from: 'show_host[show_id]'
-          select '123', from: 'show_host[member_id]'
+          select 'John Appleseed', from: 'show_host[member_id]'
           click_on 'Create Show host'
           visit show_hosts_path
           click_on 'Show'

@@ -13,30 +13,31 @@
 
   <div>
     <%= form.label :showname, 'Show name', style: "display: block" %>
-    <%= form.text_field :showname %>
+    <%= form.text_field :showname, class: 'form-control' %>
   </div>
   
   <div>
     <%= form.label :timeslot, style: "display: block" %>
-    <%= form.text_field :timeslot %>
+    <%= form.text_field :timeslot, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :showdescription, 'Show description',style: "display: block" %>
-    <%= form.text_field :showdescription %>
+    <%= form.text_field :showdescription, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :active, style: "display: block" %>
-    <%= form.number_field :active %>
+    <%= form.number_field :active, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :specialty, style: "display: block" %>
-    <%= form.select(:specialty, options_for_select([['True', true], ['False', false]], {:selected => @show.specialty}),:prompt => "Select") %>
+    <%= form.select(:specialty, [['True', true], ['False', false]], {:prompt => "Select"}, {class: 'form-select'}) %>
   </div>
 
+  <br></br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary"  %>
   </div>
 <% end %>

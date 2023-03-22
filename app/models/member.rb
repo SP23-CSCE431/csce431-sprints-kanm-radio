@@ -7,6 +7,9 @@ class Member < ApplicationRecord
      # new officer entity will be one member
      has_one :officer
 
+     # email must follow valid format of -> {characters}{@}{characters}{.}{characters}
+     validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/ }
+
      # new dj entity will be one member
      has_one :dj
 

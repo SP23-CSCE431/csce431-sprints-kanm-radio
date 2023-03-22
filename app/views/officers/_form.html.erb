@@ -13,20 +13,21 @@
 
   <div>
     <%= form.label :member_id, style: "display: block" %>
-    <%= form.select :member_id, Member.order(:firstname).map {|member| [member.firstname, member.id]}, include_blank:true, id: "id_of_the_book_id_select_box"%>
+    <%= form.select :member_id, Member.order(:netid).map { |member| [member.firstname + " " + member.lastname, member.id]}, {:prompt => "Select"} , {class: 'form-select'} %>
   </div>
 
   <div>
     <%= form.label :positionTitle, style: "display: block" %>
-    <%= form.text_field :positionTitle %>
+    <%= form.text_field :positionTitle, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :picture, style: "display: block" %>
-    <%= form.text_field :picture %>
+    <%= form.text_field :picture, class: 'form-control' %>
   </div>
 
+  <br></br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary"  %>
   </div>
 <% end %>

@@ -12,57 +12,57 @@
   <% end %>
 
   <div>
-    <%= form.label :netid, style: "display: block" %>
-    <%= form.text_field :netid %>
+    <%= form.label :netid, style: "display: block"%>
+    <%= form.text_field :netid, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :firstname, style: "display: block" %>
-    <%= form.text_field :firstname %>
+    <%= form.text_field :firstname, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :lastname, style: "display: block" %>
-    <%= form.text_field :lastname %>
+    <%= form.text_field :lastname, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :uin, style: "display: block" %>
-    <%= form.text_field :uin %>
+    <%= form.text_field :uin, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class: 'form-control' %>
   </div>
 
   <div>
-    <%= form.label :shirt, style: "display: block" %>
-    <%= form.text_field :shirt %>
+    <%= form.label :shirt, "Shirt", style: "display: block" %>
+    <%= form.select(:shirt, [["XS", 'XS'], ["S", 'S'], ["M", 'M'], ["L", 'L'], ["XL", 'XL'], ["XXL", 'XXL']], {:prompt => "Select"}, {class: 'form-select'}) %>
   </div>
 
   <div>
     <%= form.label :strikes, style: "display: block" %>
-    <%= form.number_field :strikes %>
+    <%= form.number_field :strikes, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :points, style: "display: block" %>
-    <%= form.number_field :points %>
+    <%= form.number_field :points, class: 'form-control' %>
   </div>
 
   <div>
     <%= form.label :isdj, style: "display: block" %>
-    <%= form.select(:isdj, options_for_select([['True', true], ['False', false]], {:selected => @member.isdj}),:prompt => "Select") %>
+    <%= form.select(:isdj, [['True', true], ['False', false]],{:prompt => "Select"}, {class: 'form-select'}) %>
   </div>
 
-
+  <br></br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary"  %>
   </div>
 <% end %>
