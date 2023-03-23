@@ -56,11 +56,6 @@
     <%= form.number_field :points, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.label :isdj, style: "display: block" %>
-    <%= form.select(:isdj, [['True', true], ['False', false]],{:prompt => "Select"}, {class: 'form-select'}) %>
-  </div>
-
   <br></br>
   <div>
     <%= form.submit class: "btn btn-primary"  %>
