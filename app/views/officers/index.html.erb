@@ -5,7 +5,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Member ID</th>
+      <th>Member</th>
       <th>Position Title</th>
       <th>Picture</th>
       <th>Edit Officer</th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @officers.each do |officer| %>
       <tr>
-        <td><%= officer.member_id%></td>
+        <td><%= Member.where(id: officer.member_id).last.firstname + " " + Member.where(id: officer.member_id).last.lastname%></td>
         <td><%= officer.positionTitle%></td>
         <td><%= officer.picture%></td>
         <td><%= link_to "Show this officer", officer %></td>

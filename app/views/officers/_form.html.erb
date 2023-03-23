@@ -12,17 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :member_id, style: "display: block" %>
+    <%= form.label :member_id, "Member",style: "display: block" %>
     <%= form.select :member_id, Member.order(:netid).map { |member| [member.firstname + " " + member.lastname, member.id]}, {:prompt => "Select"} , {class: 'form-select'} %>
   </div>
 
   <div>
-    <%= form.label :positionTitle, style: "display: block" %>
+    <%= form.label :positionTitle, "Position Title",style: "display: block" %>
     <%= form.text_field :positionTitle, class: 'form-control' %>
   </div>
 
   <div>
-    <%= form.label :picture, style: "display: block" %>
+    <%= form.label :picture, "Picture", style: "display: block" %>
     <%= form.text_field :picture, class: 'form-control' %>
   </div>
 

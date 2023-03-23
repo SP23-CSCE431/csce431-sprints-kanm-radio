@@ -5,7 +5,7 @@
 <table class="table">
   <thread>
     <tr>
-      <th>Member ID</th>
+      <th>Member</th>
       <th>Speciality</th>
       <th>Picture</th>
       <th>Edit DJ</th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @djs.each do |dj| %>
       <tr>
-        <td><%= dj.member_id%></td>
+        <td><%= Member.where(id: dj.member_id).last.firstname + " " + Member.where(id: dj.member_id).last.lastname %></td>
         <td><%= dj.speciality%></td>
         <td><%= dj.picture%></td>
         <td><%= link_to "Show this DJ", dj %></td>

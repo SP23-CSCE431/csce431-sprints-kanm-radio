@@ -25,7 +25,7 @@ class ShowHostsController < ApplicationController
 
           respond_to do |format|
                if @show_host.save
-                    format.html { redirect_to show_host_url(@show_host), notice: 'Show host was successfully created.' }
+                    format.html { redirect_to show_hosts_path, notice: 'Show host was successfully created.' }
                     format.json { render :show, status: :created, location: @show_host }
                else
                     format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ShowHostsController < ApplicationController
      def update
           respond_to do |format|
                if @show_host.update(show_host_params)
-                    format.html { redirect_to show_host_url(@show_host), notice: 'Show host was successfully updated.' }
+                    format.html { redirect_to show_hosts_path, notice: 'Show host was successfully updated.' }
                     format.json { render :show, status: :ok, location: @show_host }
                else
                     format.html { render :edit, status: :unprocessable_entity }

@@ -25,7 +25,7 @@ class DjsController < ApplicationController
 
           respond_to do |format|
                if @dj.save
-                    format.html { redirect_to dj_url(@dj), notice: 'Dj was successfully created.' }
+                    format.html { redirect_to djs_url, notice: 'Dj was successfully created.' }
                     format.json { render :show, status: :created, location: @dj }
                else
                     format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DjsController < ApplicationController
      def update
           respond_to do |format|
                if @dj.update(dj_params)
-                    format.html { redirect_to dj_url(@dj), notice: 'Dj was successfully updated.' }
+                    format.html { redirect_to djs_url, notice: 'Dj was successfully updated.' }
                     format.json { render :show, status: :ok, location: @dj }
                else
                     format.html { render :edit, status: :unprocessable_entity }
