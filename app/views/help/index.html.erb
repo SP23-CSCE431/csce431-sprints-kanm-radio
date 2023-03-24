@@ -1,32 +1,30 @@
-
-
 <h1>These are instructions to run the application locally</h1>
 
-<p>Run docker image docker pull paulinewade/csce431:latest
+<p>Run docker image docker pull paulinewade/csce431:latest</p>
 
-Create a directory, for example mkdir csce431
+<p>Create a directory, for example mkdir csce431</p>
 
-Move to that directory cd csce431
+<p>Move to that directory cd csce431</p>
 
-Mount and run the docker image for ubuntu: (add “sudo” in front of if permission denied for all the following commands)
+<p>Mount and run the docker image for ubuntu: (add “sudo” in front of if permission denied for all the following commands)</p>
 
-docker run -it --volume "$(pwd):/csce431" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 paulinewade/csce431:latest
+<p>docker run -it --volume "$(pwd):/csce431" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 paulinewade/csce431:latest</p>
 
-You should now be in the docker container
+<p>You should now be in the docker container</p>
 
-Run the following code in ubuntu command line within the docter container
+<p>Run the following code in ubuntu command line within the docter container</p>
 
-git clone [https://github.com/FA21-CSCE431/project-sprint-3-zlp-interviewer.git]   (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git) or git clone [https://github.com/FA21-CSCE431/project-final-code-zlp-interviewer/] (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git)
+<p>git clone [https://github.com/FA21-CSCE431/project-sprint-3-zlp-interviewer.git]   (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git) or git clone [https://github.com/FA21-CSCE431/project-final-code-zlp-interviewer/] (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git)</p>
 
-cd csce431-sprints-kanm-radio
+<p>cd csce431-sprints-kanm-radio</p>
 
-docker run --rm -it --volume "$(pwd):/rails_app" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 dmartinez05/ruby_rails_postgresql:latest
+<p>docker run --rm -it --volume "$(pwd):/rails_app" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 dmartinez05/ruby_rails_postgresql:latest</p>
 
-Install the app
+<p>Install the app</p>
 
-bundle install && rails webpacker:install && rails db:create && db:migrate
+<p>bundle install && rails webpacker:install && rails db:create && db:migrate</p>
 
-Run the app rails server --binding:0.0.0.0
+<p>Run the app rails server --binding:0.0.0.0</p>
 
-The application can be seen using a browser and navigating to http://localhost:3000/members</p>
+<p>The application can be seen using a browser and navigating to http://localhost:3000/members</p>
 <h1>Bellow are instructions to deploy the application on heroku</h1>
