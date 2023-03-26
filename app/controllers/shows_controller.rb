@@ -25,7 +25,7 @@ class ShowsController < ApplicationController
 
           respond_to do |format|
                if @show.save
-                    format.html { redirect_to show_url(@show), notice: 'Show was successfully created.' }
+                    format.html { redirect_to shows_path, notice: 'Show was successfully created.' }
                     format.json { render :show, status: :created, location: @show }
                else
                     format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ShowsController < ApplicationController
      def update
           respond_to do |format|
                if @show.update(show_params)
-                    format.html { redirect_to show_url(@show), notice: 'Show was successfully updated.' }
+                    format.html { redirect_to shows_path, notice: 'Show was successfully updated.' }
                     format.json { render :show, status: :ok, location: @show }
                else
                     format.html { render :edit, status: :unprocessable_entity }

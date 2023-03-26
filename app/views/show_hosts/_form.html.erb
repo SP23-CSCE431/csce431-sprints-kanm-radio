@@ -13,15 +13,16 @@
 
   <div>
     <%= form.label :show_id, style: "display: block" %>
-    <%= form.select :show_id, Show.order(:showname).map { |show| [show.showname, show.id] }, include_blank: true, id: "id_of_the_show_id_select_box" %>
+    <%= form.select :show_id, Show.order(:showname).map { |show| [show.showname, show.id] }, {:prompt => "Select"} , {class: 'form-select'} %>
   </div>
 
   <div>
     <%= form.label :member_id, style: "display: block" %>
-    <%= form.select :member_id, Member.order(:netid).map { |member| [member.netid, member.id]}, include_blank: true, id: "id_of_the_member_id_select_box" %>
+    <%= form.select :member_id, Member.order(:netid).map { |member| [member.firstname + " " + member.lastname, member.id]}, {:prompt => "Select"} , {class: 'form-select'} %>
   </div>
 
+  <br></br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary"  %>
   </div>
 <% end %>

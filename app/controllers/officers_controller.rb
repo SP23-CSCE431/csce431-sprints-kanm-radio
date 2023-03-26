@@ -25,7 +25,7 @@ class OfficersController < ApplicationController
 
           respond_to do |format|
                if @officer.save
-                    format.html { redirect_to officer_url(@officer), notice: 'Officer was successfully created.' }
+                    format.html { redirect_to officers_url, notice: 'Officer was successfully created.' }
                     format.json { render :show, status: :created, location: @officer }
                else
                     format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class OfficersController < ApplicationController
      def update
           respond_to do |format|
                if @officer.update(officer_params)
-                    format.html { redirect_to officer_url(@officer), notice: 'Officer was successfully updated.' }
+                    format.html { redirect_to officers_url, notice: 'Officer was successfully updated.' }
                     format.json { render :show, status: :ok, location: @officer }
                else
                     format.html { render :edit, status: :unprocessable_entity }
