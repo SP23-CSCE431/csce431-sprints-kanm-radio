@@ -1,0 +1,155 @@
+<h1 align="center">Frequently Asked Questions and Help</h1>
+
+    <h3 align = "center" ><u>1.  How do I run the application localy?</u></h3>
+
+ <h3 align = "center" ><u>2.  Step by Step Guide to Access Heroku?</u></h3>
+
+ <h3 align = "center" ><u>3.  How to get the link to your  Application?</u></h3>
+
+ <h3 align = "center" ><u>4.  How to deploy the  application? </u></h3>
+
+ <h3 align = "center" ><u>5.  How to add access for other additional Admins?</u></h3>
+
+ <h3 align = "center" ><u>6.  How to transfer applications to a new owner?</u></h3>
+
+ <h3 align = "center" ><u>7.  What is Google OAuth and How do I manage it? </u></h3>
+
+
+<h2>Heroku 101</h2>
+
+<p>Heroku is the backbone of the KANM Radio Administrator Management tool. It is a hosting service that brings all the components required to run the application together, making it the centralized location for all KANM Radio-related activities. Heroku ensures that this application runs smoothly and efficiently, making it the most crucial service that keeps KANM Radio up and running.</p>
+
+<h2>1. How do I run the application localy?</h2>
+
+<p>1. Run docker image docker pull paulinewade/csce431:latest<br>
+2. Create a directory, for example mkdir csce431<br>
+3. Move to that directory cd csce431<br>
+4. Mount and run the docker image for ubuntu: (add “sudo” in front of if permission denied for all the following commands)<br>
+5. docker run -it --volume "$(pwd):/csce431" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 paulinewade/csce431:latest<br>
+6. You should now be in the docker container<br>
+7. Run the following code in ubuntu command line within the docter container<br>
+8. git clone [https://github.com/FA21-CSCE431/project-sprint-3-zlp-interviewer.git]   (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git) or git clone [https://github.com/FA21-CSCE431/project-final-code-zlp-interviewer/] (https://github.com/SP23-CSCE431/csce431-sprints-kanm-radio.git)<br>
+9. cd csce431-sprints-kanm-radio<br>
+10. docker run --rm -it --volume "$(pwd):/rails_app" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 dmartinez05/ruby_rails_postgresql:latest<br>
+11. Install the app<br>
+12. bundle install && rails webpacker:install && rails db:create && db:migrate<br>
+13. Run the app rails server --binding:0.0.0.0<br>
+The application can be seen using a browser and navigating to http://localhost:3000/members</p>
+
+
+
+<h2>2.  Step by Step Guide to Access Heroku</h2>
+<p> <br>
+1. Visit https://id.heroku.com/login<br>
+2. Sign in with credentials provided during the application transfer process<br>
+3. Click on “test-app”’<br>
+You should be directed to the page with application dashboard. 
+</p>
+
+
+<h2>3.  How to get the link to your  Application?</h2>
+
+<p>
+1. Go to the app on Heroku<br>
+
+2. There are 2 ways to get the link:<br>
+
+a. In Heroku itself -> Go to the ‘Settings’ tab<br>
+-> Scroll to the bottom until you can see the ‘Domains’ section<br>
+b. Open the Application itself and get the URL -> Click on ‘Open App’ button (can be accessed from anywhere in the app in Heroku
+
+You will be directed to the Table Tennis Information Tracker application on a new
+tab and then you can copy the URL
+
+</p>
+
+<h2>4.  How to deploy the  application? </h2>
+<p>The application has been configured to automatically deploy whenever there's an update to the 'main' branch of the repository through pull requests on GitHub. However, if there's ever a need to manually redeploy the application, follow the steps outlined below:
+<br>
+1. Click on the ‘Deploy’ tab
+<br>
+2. Scroll to the bottom and click on ‘Deploy Branch’
+<br>
+3. Application will start building and get ready for re-deployment
+	<br>
+
+NOTE: You can click on ‘View build log’ to see what it is actually doing but this will mostly be for future developers to use
+<br>
+4. When build is done and re-deployment is successful, you should see green checkmarks 
+	<br>
+
+5. If the build failed, you could go to the ‘Activity’ tab and view the logs of the build and re-
+deployment to see what went wrong
+<br>
+NOTE:  There are times that the building phase would succeed but the deployment phase would
+fail
+</p>
+<h2>5.  How to add access for other additional Admins?</h2>
+<p>
+If you have people you want to give access to in order to further develop this project, you can give their Heroku accounts access to the ‘test-app’. This will allow them to view and make changes to this app on their Heroku account.
+<br>
+1. Go to the ‘Access’ tab
+<br>
+2. Click on ‘Add collaborator’
+<br>3. Add the email address of the Heroku account you want to give access to and click ‘Save Changes’
+<br>4. This will send an email to the person you want to give access to, telling them that they have been given access to the application on Heroku. When they log into Heroku with their credentials, they should see the ‘test-app’ app.
+</p>
+
+<h2>6.  How to transfer applications to a new owner?</h2>
+
+<p>In case you want to transfer the ownership of this application to someone else’s Heroku account, you use the follow steps:
+<br>
+Note: make sure that you have added that person as a collaborator (see the Add Access section for more information)
+<br>
+1. Go to the ‘Settings’ tab<br>
+2. Scroll to the “Transfer Ownership” section<br>
+3. Choose the Heroku account you want to transfer the ownership of the application to<br>
+4. Click ‘Transfer App...’ </p>
+
+<h2>7.  What is Google OAuth and How do I manage it? </h2>
+<p>
+In order to view keys or create new keys (possibly for development purposes):
+<br>
+1. Visit https://console.developers.google.com/cloud-resource-manager
+<br>
+2. Log into your desired account
+<br>
+3. Navigate to the “Credentials” section (in dropdown menu) under the “APIs & Services”tab on the sidebar
+<br>
+    a. If you are logged in with credentials made for this application, then you will see the Table
+    KANM OAuth under “OAuth 2.0 Client IDs” -> Upon clicking on it, you can view the client id & secret
+<br>
+
+4. To create keys to test locally, you need not be logged into the Google account used for this application. Any account will work.
+<br>
+5. To create a new a new set of keys, follow these steps:<br>
+<br>    a. On the “Credentials” tab, click on ‘Create Credentials’ at the top
+<br>    b. Select ‘OAuth client ID’
+<br>
+    c. Under “Application Type”, choose Web Application
+<br>
+    d. Click on ‘Add URI’ under “Authorized redirect URIs”
+<br>
+    e. Add the in the URL that will be called back to
+<br>
+NOTE:  Should be: URL of application (ending with a ‘/’) + ‘admins/auth/google_oauth2/callback’
+<br>
+ii. Example:https://ttcinfotracker.herokuapp.com/admins/auth/google_oauth2/callback
+<br>
+1. This is the call back URI for the current Table Tennis Information Tracker
+production application
+<br>
+2. ‘https://ttcinfotracker.herokuapp.com/’ is the URL of the app and the
+callback is ‘admins/auth/google_oauth2/callback’
+<br>
+f. Click ‘Save’
+<br>
+g. Use the Client ID and Secret (have to click on the app you just created again) as
+environment variables
+<br>
+i. The environment variables are: GOOGLE_OAUTH_CLIENT_ID and
+GOOGLE_OAUTH_CLIENT_SECRET for the client id and secret, respectively
+</p>
+
+
+
