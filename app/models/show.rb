@@ -7,6 +7,9 @@ class Show < ApplicationRecord
 
      # show name should be unique
      validates :showname, uniqueness: true
-
+     # show name, active, and time slot are required
      validates :showname, :active, :timeslot, presence: true
+
+     # false is 0; true is 1
+     validates :active, inclusion: { in: [0, 1], message: 'must be either 0 or 1' }
 end
