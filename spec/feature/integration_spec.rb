@@ -5,6 +5,42 @@ require 'rails_helper'
 
 RSpec.describe 'Adding a new member', type: :feature do
      # FROM SPRINT 3
+     scenario 'invalid duplicate netid' do
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'email@email.com'
+          click_on 'Create Member'
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '1234567890'
+          fill_in 'member[email]', with: 'email@email.com'
+          click_on 'Create Member'
+          expect(page).to have_content('Netid has already been taken')
+     end
+
+     scenario 'invalid duplicate uin' do
+          visit new_member_path
+          fill_in 'member[netid]', with: '1234'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'email@email.com'
+          click_on 'Create Member'
+          visit new_member_path
+          fill_in 'member[netid]', with: '123'
+          fill_in 'member[firstname]', with: 'John'
+          fill_in 'member[lastname]', with: 'Appleseed'
+          fill_in 'member[uin]', with: '123456789'
+          fill_in 'member[email]', with: 'email@email.com'
+          click_on 'Create Member'
+          expect(page).to have_content('Uin has already been taken')
+     end
+
      scenario 'valid submit tshirt' do
           visit new_member_path
           fill_in 'member[netid]', with: '123'
@@ -41,7 +77,7 @@ RSpec.describe 'Adding a new member', type: :feature do
           expect(page).to have_content('Email is invalid')
      end
 
-     ####
+     # END SPRINT 3
 
      scenario 'valid inputs' do
           visit new_member_path

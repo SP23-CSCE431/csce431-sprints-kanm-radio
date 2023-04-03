@@ -9,14 +9,27 @@ RSpec.describe Member, type: :model do
                               firstname: 'John',
                               lastname: 'Appleseed',
                               uin: '123456789',
-                              email: 'email@email.com')
+                              email: 'email@email.com',
+                              phone: '123456789',
+                              strikes: '1')
      end
 
-     # FROM SPRINT 3
+     # SPRINT 3
+     it 'is not valid without valid strikes' do
+          subject.strikes = '4'
+          expect(subject).not_to be_valid
+     end
+
+     it 'is not valid without valid phone' do
+          subject.email = '1233d1234'
+          expect(subject).not_to be_valid
+     end
+
      it 'is not valid without valid email' do
           subject.email = 'invalid'
           expect(subject).not_to be_valid
      end
+     # END SPRINT 3
 
      it 'is valid with valid attributes' do
           expect(subject).to be_valid
@@ -45,7 +58,13 @@ end
 
 RSpec.describe Show, type: :model do
      subject do
-          described_class.new(showname: 'name', showdescription: 'name', active: 'name', timeslot: 'name')
+          described_class.new(showname: 'name', showdescription: 'name', active: '0', timeslot: 'name')
+     end
+
+     # SPRINT 3
+     it 'is not valid with valid active' do
+          subject.active = '2'
+          expect(subject).not_to be_valid
      end
 
      it 'is valid with valid attributes' do
