@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get "/members/:id/edit", to: "members#edit"
   patch "/members/:id", to: "members#update"
   delete "/members/:id", to: "members#destroy"
+  get "help", to: "help#index"
 
 
 end
