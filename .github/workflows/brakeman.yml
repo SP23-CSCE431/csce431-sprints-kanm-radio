@@ -5,12 +5,12 @@ env:
   DATABASE_USER: postgres
   DATABASE_PASSWORD: password
 
-name: Rubocop
+name: Brakeman
 
 on: [push, pull_request]
 jobs:
-  rubocop:
-    name: Rubocop
+  brakeman:
+    name: Brakeman
     runs-on: ubuntu-latest
     services:
       postgres:
