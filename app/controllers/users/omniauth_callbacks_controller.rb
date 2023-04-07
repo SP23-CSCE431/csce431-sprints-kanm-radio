@@ -9,7 +9,7 @@ module Users
           # def twitter
           # end
           def google_oauth2
-               user = User.fromOmniauth(auth)
+               user = User.from_omniauth(auth)
 
                if user.present?
                     sign_out_all_scopes

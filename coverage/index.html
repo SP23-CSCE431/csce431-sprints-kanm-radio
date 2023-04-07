@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-04-03T14:46:37+00:00">2023-04-03T14:46:37+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-04-07T15:11:43+00:00">2023-04-07T15:11:43+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>718</b> relevant lines,
-    <span class="green"><b>704</b> lines covered</span> and
+    <b>719</b> relevant lines,
+    <span class="green"><b>705</b> lines covered</span> and
     <span class="red"><b>14</b> lines missed. </span>
     (<span class="green">
   98.05%
@@ -238,7 +238,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#841e5928167a57d664295da609186681586fcc3c" class="src_link" title="app/models/member.rb">app/models/member.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">28</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">11</td>
             <td class="cell--number">11</td>
             <td class="cell--number">0</td>
@@ -403,9 +403,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a15c362674caf6b6155e425626bfcf6619040660" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">17</td>
-            <td class="cell--number">17</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">18</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -527,7 +527,7 @@
 
             
 
-            <code class="ruby">     helper_method :userSignedIn?</code>
+            <code class="ruby">     helper_method :user_signed_in?</code>
           </li>
         </div>
       
@@ -549,7 +549,7 @@
 
             
 
-            <code class="ruby">     def userSignedIn?</code>
+            <code class="ruby">     def user_signed_in?</code>
           </li>
         </div>
       
@@ -5524,34 +5524,12 @@
 
             
 
-            <code class="ruby">     #</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
             <code class="ruby">     # phone and shirt columns can be null so not included</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
+          <li class="covered" data-hits="1" data-linenumber="14">
             <span class="hits">1</span>
             
 
@@ -5562,7 +5540,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -5573,7 +5551,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
+          <li class="covered" data-hits="1" data-linenumber="16">
             <span class="hits">1</span>
             
 
@@ -5584,7 +5562,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
@@ -5595,7 +5573,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -5606,18 +5584,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
+          <li class="covered" data-hits="1" data-linenumber="19">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">     validates :phone, format: { with: /\A\d+\z/, message: &quot;number must be integers only.&quot; }, :allow_blank =&gt; true</code>
+            <code class="ruby">     validates :phone, format: { with: /\A\d+\z/, message: &#39;number must be integers only.&#39; }, allow_blank: true</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -5628,7 +5606,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="23">
+          <li class="covered" data-hits="1" data-linenumber="21">
             <span class="hits">1</span>
             
 
@@ -5639,7 +5617,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -5650,7 +5628,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -5661,29 +5639,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="24">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">     validates :strikes, :inclusion =&gt; {:in =&gt; [0,1,2,3], message: &quot;must be between 0-3&quot; }</code>
+            <code class="ruby">     validates :strikes, inclusion: { in: [0, 1, 2, 3], message: &#39;must be between 0-3&#39; }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -5927,7 +5894,7 @@
 
             
 
-            <code class="ruby">     # show name, active, and time slot are required </code>
+            <code class="ruby">     # show name, active, and time slot are required</code>
           </li>
         </div>
       
@@ -5971,7 +5938,7 @@
 
             
 
-            <code class="ruby">     validates :active, :inclusion =&gt; {:in =&gt; [0,1], message: &quot;must be either 0 or 1&quot;}</code>
+            <code class="ruby">     validates :active, inclusion: { in: [0, 1], message: &#39;must be either 0 or 1&#39; }</code>
           </li>
         </div>
       
@@ -6231,7 +6198,7 @@
 
             
 
-            <code class="ruby">     def self.fromOmniauth(auth)</code>
+            <code class="ruby">     def self.from_omniauth(auth)</code>
           </li>
         </div>
       
@@ -11910,8 +11877,8 @@
     
 
     <div class="t-line-summary">
-      <b>17</b> relevant lines.
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>18</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -12253,13 +12220,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  get &quot;help&quot;, to: &quot;help#index&quot;</code>
           </li>
         </div>
       
@@ -12276,6 +12243,17 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
