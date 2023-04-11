@@ -1,4 +1,4 @@
-<div id="<%= dom_id member %>">
+<div id="<%= dom_id member %>" <% if member.strikes == 3 %>class="red-font"<% end %>>
   <p>
     <strong>Netid:</strong>
     <%= member.netid %>
@@ -36,7 +36,7 @@
 
   <p>
     <strong>Strikes:</strong>
-    <%= member.strikes %>
+    <%= member.strikes %> 
   </p>
 
   <p>
@@ -45,3 +45,9 @@
   </p>
 
 </div>
+
+<style>
+      .red-font {
+        color: red;
+      }
+</style> 
