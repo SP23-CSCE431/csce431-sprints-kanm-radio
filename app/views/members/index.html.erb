@@ -18,7 +18,7 @@
   
   <tbody>
       <% @members.each do |member| %>
-        <tr>
+        <tr <% if member.strikes == 3 %>class="red-row"<% end %>>
           <td><%= member.netid %></td>
           <td><%= member.firstname %></td>
           <td><%= member.lastname %></td>
@@ -29,12 +29,15 @@
           <td><%= member.strikes %></td>
           <td><%= member.points %></td>
           <td><%= link_to "Show this member", member %></td>
-        <tr>
+        </tr>
       <% end %>
   </tbody>
 </table>
 
-
-
 <%= link_to "<button>New member</button>".html_safe, new_member_path %>
 
+<style>
+      .red-row {
+        color: red;
+      }
+</style>
