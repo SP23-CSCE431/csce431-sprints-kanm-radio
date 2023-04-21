@@ -14,11 +14,14 @@ The application was built on the Ruby on Rails framework, with an intuitive inte
 
 This code has been run and tested on:
 
-- Ruby - 3.0.2p107
-- Rails - 6.1.4.1
+- Ruby - 3.1.2
+- Rails - 7.0.4.2
 - Ruby Gems - Listed in `Gemfile`
-- PostgreSQL - 13.3
+- PostgreSQL - 1.1
 - Docker (Latest Container)
+-	RuboCop - 1.48.0
+-	Simplecov - 0.22.0
+-	Brakeman - 5.2.3
 
 ## External Resources 
 
@@ -27,7 +30,14 @@ This code has been run and tested on:
 - Git - Downloat latest version at https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 - GitHub Desktop (Not needed, but HELPFUL) at https://desktop.github.com/
 
+## Documentation
 
+Our product and sprint backlog can be found in Jira, with organization name KANMRadio and project name KANM
+
+Document
+•	Data Design - v2
+•	UX Design - v2
+•	User’s Manual - v1
 
 ## Tests
 
