@@ -18,7 +18,7 @@
       <tr>
         <td><%= Member.where(id: dj.member_id).last.firstname + " " + Member.where(id: dj.member_id).last.lastname %></td>
         <td><%= dj.speciality%></td>
-        <td><%= dj.picture%></td>
+        <td><%= truncate(dj.picture, length:30) %></td>
         <td><%= link_to "Show this DJ", dj %></td>
       </tr>
     <% end %>

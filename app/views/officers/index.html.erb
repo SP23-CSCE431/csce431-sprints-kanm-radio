@@ -17,7 +17,7 @@
       <tr>
         <td><%= Member.where(id: officer.member_id).last.firstname + " " + Member.where(id: officer.member_id).last.lastname%></td>
         <td><%= officer.positionTitle%></td>
-        <td><%= officer.picture%></td>
+        <td><%= truncate(officer.picture, length:30)%></td>
         <td><%= link_to "Show this officer", officer %></td>
       <tr>
     <% end %>
