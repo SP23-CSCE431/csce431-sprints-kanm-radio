@@ -15,7 +15,7 @@
   </p>
 
   <p>
-    <%= image_tag dj.picture, :border => 0 %>
+    <%= image_tag dj.picture rescue image_tag '/assets/no_image.png' %>
   </p>
 
 </div>

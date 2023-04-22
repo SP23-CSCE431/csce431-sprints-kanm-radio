@@ -15,7 +15,8 @@
   </p>
 
   <p>
-    <%= image_tag officer.picture, :border => 0 %>
+    <%= image_tag officer.picture rescue image_tag '/assets/no_image.png' %>
+
   </p>
 
 </div>
