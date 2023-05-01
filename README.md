@@ -87,7 +87,7 @@ Install the app
 Run the app
 `rails server --binding:0.0.0.0`
 
-The application can be seen using a browser and navigating to http://localhost:3000/members
+The application can be seen using a browser and navigating to http://localhost:3000/
 
 ## Environmental Variables/Files ##
 
