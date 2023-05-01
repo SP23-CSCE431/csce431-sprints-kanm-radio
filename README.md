@@ -137,7 +137,7 @@ For continuous development, we set up Heroku to automatically deploy our apps wh
 
   `Production app: main branch`
 
-For continuous integration, we set up a Github action to run our specs, security checks, linter, etc. after every push or pull-request. This allows us to automatically ensure that our code is working as intended.
+For continuous integration, we set up a Github action to run our specs, security checks, linter, etc. after every push or pull-request. This allows us to automatically ensure that our code is working as intended. The Github action names for these are Rspec, Brakeman, and Rubocop respectively. 
 
 ## References and Support ##
 
